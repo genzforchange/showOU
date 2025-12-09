@@ -20,9 +20,9 @@ for (i = 0; i < coll.length; i++) {
 
 
 // emails 
-const okEmailAddresses = ["regentholloway@ou.edu", 'regentnagel@ou.edu', 'regentstevenson@ou.edu', 'regentross@ou.edu', 'regentbraught@ou.edu', 'regentwaits@ou.edu', 'regentwilliams@ou.edu', 'daniel_hamlin@ou.edu', 'stitt@gov.ok.gov'];
-const ouEmailAddresses = ["mountford@ou.edu", "ldmiller@ou.edu", "cwalker@ou.edu", "dsurratt@ou.edu", "officeofthepresident@ou.edu", "andre.wright@ou.edu"];
-// const emailAddresses = [];
+// const okEmailAddresses = ["regentholloway@ou.edu", 'regentnagel@ou.edu', 'regentstevenson@ou.edu', 'regentross@ou.edu', 'regentbraught@ou.edu', 'regentwaits@ou.edu', 'regentwilliams@ou.edu', 'daniel_hamlin@ou.edu', 'stitt@gov.ok.gov'];
+// const ouEmailAddresses = ["mountford@ou.edu", "ldmiller@ou.edu", "cwalker@ou.edu", "dsurratt@ou.edu", "officeofthepresident@ou.edu", "andre.wright@ou.edu"];
+const emailAddresses = ["regentholloway@ou.edu", 'regentnagel@ou.edu', 'regentstevenson@ou.edu', 'regentross@ou.edu', 'regentbraught@ou.edu', 'regentwaits@ou.edu', 'regentwilliams@ou.edu', 'daniel_hamlin@ou.edu', 'stitt@gov.ok.gov', "mountford@ou.edu", "ldmiller@ou.edu", "cwalker@ou.edu", "dsurratt@ou.edu", "officeofthepresident@ou.edu", "andre.wright@ou.edu"];
 
 // SUBJECTS SYNONYMS - subjectLine built and used below 
 const URGENTSynonyms = ["URGENT", "IMMEDIATE", "PRESSING", "CRITICAL", "IMPORTANT", "PRIORITY", "PRESSING"];
@@ -111,9 +111,9 @@ function generateRandomEmail() {
   const emailAddresses = [...randomOU, ...randomOK];
 
   const subjectLine = `${urgent} ${demandSubject} ${colon} ${reinstateSubject} ${subjectBase}`
-  const emailBody = 
+  const emailBody =
 
-`${greeting} ${admin} and ${oklahoma} ${leaders},
+    `${greeting} ${admin} and ${oklahoma} ${leaders},
 
 As a ${concerned} community member, I am ${writing} to ${express} ${extreme} ${moralOutrage} over your ${decision} to place Graduate Teaching Assistant Mel Curth on administrative leave. 
 
