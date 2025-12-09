@@ -102,26 +102,28 @@ function generateRandomEmail() {
 
   const continuous = continuousSynonyms[Math.floor(Math.random() * continuousSynonyms.length)];
 
-   const oklahoma = oklahomaSynonyms[Math.floor(Math.random() * oklahomaSynonyms.length)];
-   const leaders = leaders[Math.floor(Math.random() * leaders.length)];
+  const oklahoma = oklahomaSynonyms[Math.floor(Math.random() * oklahomaSynonyms.length)];
+  const leaders = leadersSynonyms[Math.floor(Math.random() * leadersSynonyms.length)];
 
   // get 3 emails from each list and combine them into emailAddresses array!!
-  const randomOU = [...OUemailAddresses].sort(() => Math.random() - 0.5).slice(0, 3);
-  const randomOK = [...OKemailAddresses].sort(() => Math.random() - 0.5).slice(0, 3);
+  const randomOU = [...ouEmailAddresses].sort(() => Math.random() - 0.5).slice(0, 3);
+  const randomOK = [...ouEmailAddresses].sort(() => Math.random() - 0.5).slice(0, 3);
   const emailAddresses = [...randomOU, ...randomOK];
 
   const subjectLine = `${urgent} ${demandSubject} ${colon} ${reinstateSubject} ${subjectBase}`
-  const emailBody = `${greeting} ${admin} and ${oklahoma} ${leaders},
-   As a ${concerned} community member, I am ${writing} to ${express} ${extreme} ${moralOutrage} over your ${decision} to place Graduate Teaching Assistant Mel Curth on administrative leave.
+  const emailBody = 
 
-    The OU administration’s capitulation ${sets} a ${dangerous} ${precedent} at the ${university} by emboldening a culture in which academic integrity is optional, and professors can be bullied into overriding their professional judgment to avoid political retaliation.
+`${greeting} ${admin} and ${oklahoma} ${leaders},
 
-    We ${demand} that ${university} ${immediately} ${reinstate} Mel Curth and any other ${improperly} ${penalized} faculty in full standing, issue a public apology, and ${reaffirm} the right of OU faculty to grade based on academic performance, free from political interference.
+As a ${concerned} community member, I am ${writing} to ${express} ${extreme} ${moralOutrage} over your ${decision} to place Graduate Teaching Assistant Mel Curth on administrative leave. 
 
-    In a time when higher education is under ${continuous} assault, stand on the right side of history now!
+The OU administration’s capitulation ${sets} a ${dangerous} ${precedent} at the ${university} by emboldening a culture in which academic integrity is optional, and professors can be bullied into overriding their professional judgment to avoid political retaliation. 
 
-    ${closing},
-  `;
+We ${demand} that ${university} ${immediately} ${reinstate} Mel Curth and any other ${improperly} ${penalized} faculty in full standing, issue a public apology, and ${reaffirm} the right of OU faculty to grade based on academic performance, free from political interference.
+
+In a time when higher education is under ${continuous} assault, stand on the right side of history now!
+
+${closing},`;
 
   const encodedSubject = encodeURIComponent(subjectLine);
   const encodedBody = encodeURIComponent(emailBody);
@@ -143,6 +145,7 @@ async function emailCount(buttonID) {
   // update w sean
   // const url = `https://ptb-tracking.gz4c.org/?button=${buttonID}`;
   // const url = 'https://pumpthebreaks-tracking-368099953691.us-central1.run.app?button=0'
+  const url = 'https://oklahoma-tracking-368099953691.us-east4.run.app?button=0'
 
   const response = fetch(url)
     .then((response) => response.json())

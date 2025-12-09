@@ -17,6 +17,7 @@ body {
   background-repeat: repeat;
   background-size: cover;
   margin: auto;
+  width: 100%;
 }
 
 h1{
@@ -34,7 +35,6 @@ h2{
 h3{
   font-family: Abolition, sans-serif;
   font-size: 55px;
-  line-height: 64px;
   letter-spacing: 2px;
   color: var(--red) !important;
 }
@@ -56,11 +56,14 @@ p{
   z-index: -2;
 }
 
+.flush-left {
+  width: 40%
+}
+
 .flush-left img {
   justify-content: left;
   position: relative;
-  /* display: absolute; */
-  width: 85vh;
+  width: 65vh;
   top: -150px;
   left: -150px;
   z-index: -1;
@@ -71,22 +74,14 @@ p{
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  left: -175px;
-  bottom: -1px;
-  width: 100%;
+  width: 60%;
+  padding: 0px 50px;
 }
 
 .flush-right img {
-  width: 300px;
+  width: 400px;
   position: relative;
-  left: 50%;
-  right: 1px;
   padding-top: 30px;
-}
-
-.flush-right .header-text {
-  padding: 20px;
-  width: 50vw;
 }
 
 /* BODY */
@@ -124,7 +119,8 @@ button {
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: flex-end;
+  align-items: right;
 }
 
 .button {
@@ -135,10 +131,15 @@ button {
   margin: 10px;
   font-weight: bold;
   font-size: 21px;
-  width: 75%;
+  width: 60%;
 }
 
 /* FAQ */
+
+.faq{
+  margin-bottom: 50px;
+}
+
 .faq-item {
   border-bottom: 1px solid black;
 }
@@ -182,19 +183,157 @@ button {
 
 /* FOOTER */
 
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+
 .footer p{
   text-align: center;
   color: var(--white);
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  padding: 20px 0px;
   margin: 0px;
+}
+
+.rw-sticker {
+  height: 10vh;
+  margin: 0px auto;
+  margin-top: -75px;
+}
+
+.ou-flag-footer{
+  height: 10vh;
+  margin: 0px auto;
+  margin-top: -75px;
 }
 
 /* MOBILE */
 
 @media screen and (max-width: 768px) {
+  .jumbotron {
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flush-left {
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+  }
+
+  .flush-left img {
+    justify-content: center;
+    width: 100%;
+    top: -45%;
+    left: 0px;
+    z-index: -1;
+  }
+
+  .flush-right {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 10px;
+  }
+
+  .flush-right img {
+    width: 60%;
+  }
+
+  .flush-right .header-text {
+    padding: 0px;
+    text-align: left;
+  }
+
+  .tool {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .demands{
+    width: 100%;
+  }
+
+  .button-group{
+    width: 100%;
+  }
+
+  .button{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 46px;
+    line-height: 55px;
+  }
+
+  h2 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  h3 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  ol {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .collapsible {
+    font-size: 21px;
+  }
+
+  .content{
+    font-size: 16px
+  }
+  
+  .main {
+    padding: 25px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 0 25px;
+  }
+
+  .footer p{
+    font-size: 13px;
+  }
+  
+  .rw-sticker {
+    height: 5vh;
+    margin-top: -75px;
+  }
+
+  .ou-flag-footer{
+    height: 5vh;
+    margin-top: -75px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 769px) and (max-width: 1024px){
   .jumbotron {
     height: 100%;
     display: block;
@@ -244,7 +383,7 @@ button {
   .tool {
     padding: 20px 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .demands{
@@ -256,8 +395,8 @@ button {
   }
 
   h1{
-    font-size: 55px;
-    line-height: 64px;
+    font-size: 46px;
+    line-height: 55px;
   }
 
   h2 {
@@ -277,7 +416,7 @@ button {
   .button-group {
     flex-direction: column;
   }
-  
+
   .collapsible {
     font-size: 21px;
   }
@@ -285,9 +424,8 @@ button {
   .content{
     font-size: 16px
   }
-  
+
   .main {
     padding: 25px;
   }
-
 }
