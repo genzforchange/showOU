@@ -1,3 +1,5 @@
+@import url('https://use.typekit.net/waw2dco.css');
+
 :root {
   --red: #990000;
   --white: #f5f5f5
@@ -11,10 +13,36 @@ html {
 body {
   font-family: Arial, sans-serif;
   background-color: var(--red);
-  background-image: url("assets/OU-Background-Red.png");
-  background-repeat: no-repeat;
+  background: url("assets/OU-Background-Red.png");
+  background-repeat: repeat;
   background-size: cover;
   margin: auto;
+}
+
+h1{
+  font-family: Abolition, sans-serif;
+  font-size: 76px;
+  letter-spacing: 2px;
+}
+
+h2{
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+  line-height: 34px;
+}
+
+h3{
+  font-family: Abolition, sans-serif;
+  font-size: 55px;
+  line-height: 64px;
+  letter-spacing: 2px;
+  color: var(--red) !important;
+}
+
+p{
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /* JUMBOTRON / HEADER */
@@ -27,7 +55,6 @@ body {
   height: 70vh;
   z-index: -2;
 }
-
 
 .flush-left img {
   justify-content: left;
@@ -68,7 +95,7 @@ body {
   background-color: var(--white);
   background-image: url("https://i.pinimg.com/736x/c8/cd/80/c8cd80c1ff123b37d5be09783e812045.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw ;
+  background-size: cover;
   padding: 45px 70px;
 }
 
@@ -77,13 +104,9 @@ body {
   font-weight: bold;
 }
 
-h3 {
-  color: var(--red) !important;
-  font-size: 36px;
-}
-
 ol {
-  font-size: 24px;
+  font-size: 26px;
+  line-height: 34px;
 }
 
 button {
@@ -99,10 +122,10 @@ button {
   color: var(--white);
   background-color: var(--red);
   border: none;
-  padding: 10px 20px;
+  padding: 15px 30px;
   margin: 10px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 /* FAQ */
@@ -112,12 +135,12 @@ button {
 
 .collapsible {
   width: 100%;
-  background-color: none;
+  background-color: transparent;
   color: var(--red);
   border: none;
   cursor: pointer;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
   text-align: left;
   padding: 10px 0px;
 }
@@ -139,19 +162,31 @@ button {
 }
 
 .content {
-  padding: 0 18px;
   display: none;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-  font-weight: light;
+  font-size: 21px;
+  font-weight: regular;
+}
+
+/* FOOTER */
+
+.footer p{
+  text-align: center;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 0px;
+  margin: 0px;
 }
 
 /* MOBILE */
 
 @media screen and (max-width: 768px) {
   .jumbotron {
-    height: 100vh;
+    height: 100%;
     display: block;
     justify-content: center;
     align-items: center;
@@ -167,7 +202,7 @@ button {
     justify-content: center;
     width: 100%;
     max-width: 370px;
-    top: -40%;
+    top: -45%;
     left: 0px;
     z-index: -1;
   }
@@ -179,14 +214,14 @@ button {
     width: 100%;
     text-align: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 0px;
   }
 
   .flush-right img {
-    width: 70%;
+    width: 80%;
     left: 0px;
     right: 0px;
-    padding-top: 20px;
+    padding-top: 0px;
   }
 
   .flush-right .header-text {
@@ -196,11 +231,37 @@ button {
     text-align: left;
   }
 
-  h2 {
-    font-size: 18px;
+  h1{
+    font-size: 55px;
+    line-height: 64px;
   }
 
-  /* BODY */
+  h2 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  h3 {
+    font-size: 46px;
+    line-height: 55px;
+  }
+
+  ol {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .collapsible {
+    font-size: 21px;
+  }
+
+  .content{
+    font-size: 16px
+  }
+  
   .main {
     padding: 25px;
   }
