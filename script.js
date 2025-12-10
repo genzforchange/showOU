@@ -22,9 +22,9 @@ for (i = 0; i < coll.length; i++) {
 // emails 
 // const okEmailAddresses = ["regentholloway@ou.edu", 'regentnagel@ou.edu', 'regentstevenson@ou.edu', 'regentross@ou.edu', 'regentbraught@ou.edu', 'regentwaits@ou.edu', 'regentwilliams@ou.edu', 'daniel_hamlin@ou.edu', 'stitt@gov.ok.gov'];
 // const ouEmailAddresses = ["mountford@ou.edu", "ldmiller@ou.edu", "cwalker@ou.edu", "dsurratt@ou.edu", "officeofthepresident@ou.edu", "andre.wright@ou.edu"];
-const emailAddresses = ["regentholloway@ou.edu", 
-"integrity@ou.edu",         'regentnagel@ou.edu', 'regentstevenson@ou.edu', 'regentross@ou.edu', 'regentbraught@ou.edu', 'regentwaits@ou.edu', 'daniel_hamlin@ou.edu', "mountford@ou.edu", "ldmiller@ou.edu",
- "studentaffairs@ou.edu",               "dsurratt@ou.edu", "officeofthepresident@ou.edu", "andre.wright@ou.edu"];
+const emailAddresses = ["regentholloway@ou.edu",
+  "integrity@ou.edu", 'regentnagel@ou.edu', 'regentstevenson@ou.edu', 'regentross@ou.edu', 'regentbraught@ou.edu', 'regentwaits@ou.edu', 'daniel_hamlin@ou.edu', "mountford@ou.edu", "ldmiller@ou.edu",
+  "studentaffairs@ou.edu", "dsurratt@ou.edu", "officeofthepresident@ou.edu", "andre.wright@ou.edu"];
 
 // SUBJECTS SYNONYMS - subjectLine built and used below 
 const URGENTSynonyms = ["URGENT", "IMMEDIATE", "PRESSING", "CRITICAL", "IMPORTANT", "PRIORITY", "PRESSING"];
